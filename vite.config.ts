@@ -19,9 +19,8 @@ export default defineConfig(({ mode }) => ({
         '/',
         '/blog',
         {
-          contentDir: 'src/content',
+          contentDir: '/src/content',
           transform: (file: PrerenderContentFile) => {
-            // use the slug from frontmatter if defined, otherwise use the files basename
             const slug = file.attributes['slug'] || file.name;
             return `/blog/${slug}`;
           },

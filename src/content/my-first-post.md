@@ -10,3 +10,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at nunc feugiat
 Nam non mollis tortor, sit amet varius turpis. Donec pretium sagittis sapien vel volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis consequat odio. Aenean lobortis ac lorem ornare euismod. Nulla lobortis velit velit, non pellentesque enim lobortis convallis. Integer et urna porta, interdum nisl vel, sagittis lectus.
 
 Nullam a rhoncus justo, in ornare ex. Vivamus eu tortor dictum lorem dignissim gravida. In interdum viverra felis, ut ultrices dui euismod nec. Nunc auctor fringilla enim, vel molestie velit fermentum non. Vestibulum vulputate at odio sed luctus. Nulla facilisi. Aenean eu sapien nec velit venenatis volutpat ut nec turpis. Cras convallis sagittis erat id bibendum. Suspendisse potenti. Sed accumsan suscipit enim, vel commodo enim lobortis iaculis. Curabitur arcu justo, bibendum auctor aliquam quis, egestas quis mauris.
+
+```ts
+function fun(a, b) {
+  return a + b
+}
+```

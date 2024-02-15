@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { NavComponent } from '../components/nav/nav.component';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, NavComponent],
   template: `
-    <h1>
-      <a [routerLink]="['/']">mnieruchalski.me</a>
-    </h1>
+    <app-nav />
     <router-outlet></router-outlet>
   `,
 })
 export default class BlogPage {
-  
 }
