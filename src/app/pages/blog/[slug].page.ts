@@ -8,7 +8,11 @@ import { BlogPostComponent } from "../../components/blog-post/blog-post.componen
   selector: 'app-blog-post-page',
   standalone: true,
   imports: [AsyncPipe, BlogPostComponent],
-  template: `<app-blog-post [post]="post$ | async" />`
+  template: `
+    @if (post$ | async; as post) {
+      <app-blog-post [post]="post" />
+    }
+  `
 })
 export default class BlogPostPage {
   post$ = injectContent<BlogPost>();
