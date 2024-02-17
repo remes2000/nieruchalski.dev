@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      /* the script is put here to avoid flickering on first load */
+      const THEME_MODE_STORAGE_KEY = 'theme_mode_storage_key';
+      const DARK_MODE_CLASS = 'dark-mode';
+      const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const storedItem = localStorage.getItem(THEME_MODE_STORAGE_KEY);
+      if (storedItem === 'dark' || (!storedItem && isSystemDark)) {
+        document.documentElement.classList.add(DARK_MODE_CLASS);
+      }
+    </script>
   </head>
   <body>
     <app-root></app-root>

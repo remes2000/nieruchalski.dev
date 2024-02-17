@@ -23,9 +23,9 @@ export class ThemeModeService implements OnDestroy {
   init(renderer: Renderer2, document: Document) {
     this.isDarkMode$.pipe(takeUntil(this.destroyed$)).subscribe((isDarkMode) => {
       if (isDarkMode) {
-        renderer.addClass(document.body, DARK_MODE_CLASS);
+        renderer.addClass(document.documentElement, DARK_MODE_CLASS);
       } else {
-        renderer.removeClass(document.body, DARK_MODE_CLASS);
+        renderer.removeClass(document.documentElement, DARK_MODE_CLASS);
       }
     });
   }
