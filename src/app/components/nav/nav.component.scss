@@ -1,13 +1,16 @@
 nav {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
   padding: 1.2rem 4rem;
-  border-bottom: .2rem solid #e5e8eb;
+  border-bottom: .1rem solid var(--accent-color);
   box-sizing: border-box;
 
   .blog-name {
     font-size: 1.8rem;
     a {
       text-decoration: none;
-      color: black;
+      color: var(--font-color);
     }
   }
 }

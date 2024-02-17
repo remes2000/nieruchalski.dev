@@ -9,6 +9,6 @@ export const appConfig: ApplicationConfig = {
     provideFileRouter(),
     provideHttpClient(withFetch()),
     provideClientHydration(),
-    provideContent(withMarkdownRenderer())
+    provideContent(withMarkdownRenderer()),
   ],
 };
