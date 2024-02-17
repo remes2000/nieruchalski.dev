@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  border-radius: 1.2rem;
+
+  .feature-image {
+    width: 16rem;
+    height: 10rem;
+    margin-right: 1.5rem;
+    background-color: lightgray;
+    border-radius: 1.2rem;
+
+    background-image: var(--img);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .content {
+    padding: 1.5rem .3rem;
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+}

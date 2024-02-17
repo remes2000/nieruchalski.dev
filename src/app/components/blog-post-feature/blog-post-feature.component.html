@@ -1,0 +1,9 @@
+<a [routerLink]="['/blog', post.slug]">
+  <section [style.--img]="'url(https://www.zooplus.pl/magazyn/wp-content/uploads/2018/01/Shiba-Inu-1.jpg)'">
+    <div class="feature-image"></div>
+    <div class="content">
+      <header class="title">{{ post.attributes.title }}</header>
+      <p class="subtitle">{{ post.attributes.subtitle }}</p>
+    </div>
+  </section>
+</a>

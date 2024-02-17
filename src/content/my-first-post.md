@@ -1,6 +1,7 @@
 ---
 title: My first post
 slug: my-first-post
+subtitle: Do you like it?
 ---
 
 ### My first post title
