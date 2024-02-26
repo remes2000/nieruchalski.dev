@@ -1,8 +1,9 @@
 import { injectContent } from "@analogjs/content";
 import { AsyncPipe } from "@angular/common";
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { BlogPost } from "src/app/models/post";
 import { BlogPostComponent } from "../../components/blog-post/blog-post.component";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-blog-post-page',
@@ -15,5 +16,6 @@ import { BlogPostComponent } from "../../components/blog-post/blog-post.componen
   `
 })
 export default class BlogPostPage {
-  post$ = injectContent<BlogPost>();
+  private readonly route = inject(ActivatedRoute);
+  post$ = injectContent<BlogPost>({ param: 'slug', subdirectory: this.route.snapshot.paramMap.get('slug') });
 }
