@@ -1,11 +1,12 @@
 import { ContentFile, MarkdownComponent } from '@analogjs/content';
+import { DatePipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { BlogPost } from 'src/app/models/post';
 
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [MarkdownComponent],
+  imports: [MarkdownComponent, DatePipe],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.scss'
 })

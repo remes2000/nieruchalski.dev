@@ -1,13 +1,15 @@
 ---
 title: "Deciphering Facebook: Analyzing Messenger Chats"
 slug: deciphering-facebook
-subtitle: How to check wather you friends like you?
-thumbnail: /src/content/deciphering-facebook/thumbnail.jpg
+subtitle: How do you find out if your friends like you?
+thumbnail: /posts/deciphering-facebook/thumbnail.jpg
+date: 2024-02-26 20:00:00.000Z
+author: Michał Nieruchalski
 ---
 
 <figure>
   <img
-    src="src/content/deciphering-facebook/header.jpg"
+    src="/posts/deciphering-facebook/header.jpg"
     alt="Facebook Messenger Logo"
     title="Facebook Messenger Logo"
   />
@@ -27,7 +29,7 @@ First things first, I had to collect the data. Luckily, there’s a built-in Fac
 
 <figure>
   <img 
-    src="src/content/deciphering-facebook/download-info-dialog.png" 
+    src="/posts/deciphering-facebook/download-info-dialog.png" 
     alt="Download your information dialog"
     title="Download your information dialog"
     width="600px"
@@ -42,7 +44,7 @@ Then you can specify what kind of data you want to download (messages) and defin
 ## The output format
 The data was broken down into multiple .zip archives and each archive was about ~6 GB. Each archive contained files that looked something like this:
 
-```none
+```html
 - messages
   - inbox
     - [Group chat name]_[bunch of numbers (propably some kind of id)]
@@ -140,7 +142,7 @@ GROUP BY author
 ORDER BY COUNT(*) DESC;
 ```
 
-```none
+```html
 author             |Message Count|Percentage|
 -------------------+-------------+----------+
 Krystian           |        17686|23.19%    |
@@ -162,7 +164,7 @@ FROM messages
 GROUP BY STRFTIME('%m-%Y', DATETIME(date, 'unixepoch'))
 ORDER BY date;
 ```
-```none
+```html
 Month  |Count|
 -------+-----+
 02-2022| 2599|
@@ -195,7 +197,7 @@ Since right now, it’s just a bunch of numbers, I’ll create a Barchart, to vi
 
 <figure>
   <img
-    src="src/content/deciphering-facebook/barchart.png"
+    src="/posts/deciphering-facebook/barchart.png"
     alt="Chart: Number of messages a Month"
     title="Chart: Number of messages a Month"
   />

@@ -24,7 +24,6 @@ export default defineConfig(({ mode }) => ({
             const slug = file.attributes['slug'] || file.name;
             return `/blog/${slug}`;
           },
-
         },
       ],
     },

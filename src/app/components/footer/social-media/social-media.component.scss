@@ -1,0 +1,16 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem;
+
+  a {
+    display: block;
+    width: 2.5rem;
+
+    svg {
+      width: 100%;
+      fill: var(--font-color);
+    }
+  }
+}

@@ -1,4 +1,5 @@
 <article class="blog-post">
   <h1>{{ post.attributes.title }}</h1>
+  <section class="author">{{ post.attributes.date | date }} - {{ post.attributes.author }}</section>
   <analog-markdown [content]="post.content" />
 </article>
