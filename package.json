@@ -47,11 +47,5 @@
     "typescript": "~5.3.0",
     "vite": "~5.0.0",
     "vitest": "^1.0.0"
-  },
-  "optionalDependencies": {
-    "@nx/nx-darwin-arm64": "^17.1.0",
-    "@nx/nx-darwin-x64": "^17.1.0",
-    "@nx/nx-linux-x64-gnu": "^17.1.0",
-    "@nx/nx-win32-x64-msvc": "^17.1.0"
   }
 }
