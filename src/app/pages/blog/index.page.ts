@@ -4,6 +4,11 @@ import { RouterLink } from '@angular/router';
 import { injectContentFiles } from '@analogjs/content';
 import { BlogPost } from 'src/app/models/post';
 import { BlogPostFeatureComponent } from '../../components/blog-post-feature/blog-post-feature.component';
+import { RouteMeta } from '@analogjs/router';
+
+export const routeMeta: RouteMeta = {
+  title: 'Michał Nieruchalski',
+};
 
 @Component({
   selector: 'app-blog-index-page',
