@@ -3,7 +3,7 @@ name: Build Deploy
 on:
   push:
     branches:
-      - '*' # deploy on all branches (but a --dry-run flag is added for branches (see code below))
+      - main
 
 env:
   TARGET_DIR: dist/analog/public
@@ -36,4 +36,4 @@ jobs:
           GH_TOKEN: ${{ secrets.ACCESS_TOKEN }} # A token must be created to be able to deploy on the gh-pages branch
         run: |
           echo "DRY_RUN_OPTION=$DRY_RUN_OPTION"
-          npx angular-cli-ghpages --no-silent  --repo=https://github.com/remes2000/remes2000.github.io.git --name="Michał Nieruchalski" --email=nieruchalskimichal@gmail.com --branch=main --dir="${{env.TARGET_DIR}}" $DRY_RUN_OPTION
+          npx angular-cli-ghpages --no-silent  --repo=https://github.com/remes2000/remes2000.github.io.git --name="Michał Nieruchalski" --email=nieruchalskimichal@gmail.com --branch=main --dir="${{env.TARGET_DIR}}" $DRY_RUN_OPTION --cname=nieruchalski.dev
