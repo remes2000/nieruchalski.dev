@@ -28,6 +28,7 @@ body {
   figure {
     margin: 0;
     text-align: center;
+    width: 100%;
   }
 
   img {

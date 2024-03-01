@@ -44,7 +44,7 @@ export const routeMeta: RouteMeta = {
   template: `
     <div class="wrapper">
       <header>
-        <h1>Hello ヽ(•‿•)ノ</h1>
+        <h1>Hello <span class="funny-head">ヽ(•‿•)ノ</span></h1>
         <p>Nice to see you! Enjoy!</p>
       </header>
       <article>
@@ -80,6 +80,14 @@ export const routeMeta: RouteMeta = {
         p {
           font-size: 1.2rem;
         }
+        .funny-head {
+          white-space: nowrap;
+          line-height: 2;
+        }
+
+        @media screen and (max-width: 400px) {
+          text-align: center;
+        }        
       }
     }
   `]

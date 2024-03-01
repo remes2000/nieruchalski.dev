@@ -1,6 +1,6 @@
 <a [routerLink]="['/blog', post.slug]">
-  <section [style.--img]="'url(' +  (post.attributes.thumbnail ?? 'https://www.zooplus.pl/magazyn/wp-content/uploads/2018/01/Shiba-Inu-1.jpg') + ')'">
-    <div class="feature-image"></div>
+  <section [style.--img]="'url(' +  post.attributes.thumbnail + ')'">
+    <img [src]="post.attributes.thumbnail" class="feature-image" alt="Post thumbnail" />
     <div class="content">
       <header class="title">{{ post.attributes.title }}</header>
       <p class="subtitle">{{ post.attributes.subtitle }}</p>
