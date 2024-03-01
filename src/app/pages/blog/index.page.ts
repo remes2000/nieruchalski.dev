@@ -24,8 +24,12 @@ export const routeMeta: RouteMeta = {
     },
     {
       name: 'og:image',
-      content: `${WEBSITE_URL}/me.jpeg`,
-    }
+      content: `${WEBSITE_URL}/main-featured-image.jpg`,
+    },
+    {
+      name: 'og:url',
+      content: WEBSITE_URL,
+    },
   ],
 };
 
