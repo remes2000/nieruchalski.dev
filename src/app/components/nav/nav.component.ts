@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ModeSwitchComponent } from './_feature/mode-switch/mode-switch.component';
+import { WEBSITE_DOMAIN } from '../../const';
 
 @Component({
   selector: 'app-nav',
@@ -10,4 +11,5 @@ import { ModeSwitchComponent } from './_feature/mode-switch/mode-switch.componen
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+  WEBSITE_DOMAIN = WEBSITE_DOMAIN;
 }

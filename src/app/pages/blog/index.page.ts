@@ -2,12 +2,31 @@ import { Component } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { injectContentFiles } from '@analogjs/content';
-import { BlogPost } from 'src/app/models/post';
 import { BlogPostFeatureComponent } from '../../components/blog-post-feature/blog-post-feature.component';
 import { RouteMeta } from '@analogjs/router';
+import { BlogPost } from 'src/app/models/post';
+import { WEBSITE_URL } from '../../const';
 
 export const routeMeta: RouteMeta = {
   title: 'Michał Nieruchalski',
+  meta: [
+    {
+      name: 'description',
+      content: 'My blog about tech',
+    },
+    {
+      name: 'og:title',
+      content: 'Michał Nieruchalski',
+    },
+    {
+      name: 'og:description',
+      content: 'My blog about tech',
+    },
+    {
+      name: 'og:image',
+      content: `${WEBSITE_URL}/me.jpeg`,
+    }
+  ],
 };
 
 @Component({
