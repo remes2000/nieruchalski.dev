@@ -15,20 +15,24 @@ export const routeMeta: RouteMeta = {
       content: 'My blog about tech',
     },
     {
-      name: 'og:title',
+      property: 'og:title',
       content: 'Michał Nieruchalski',
     },
     {
-      name: 'og:description',
+      property: 'og:description',
       content: 'My blog about tech',
     },
     {
-      name: 'og:image',
+      property: 'og:image',
       content: `${WEBSITE_URL}/main-featured-image.jpg`,
     },
     {
-      name: 'og:url',
+      property: 'og:url',
       content: WEBSITE_URL,
+    },
+    {
+      property: 'og:type',
+      content: 'website',
     },
   ],
 };

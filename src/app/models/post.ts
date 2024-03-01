@@ -4,4 +4,9 @@ export interface BlogPost {
   subtitle?: string;
   date?: string;
   author?: string;
+  meta?: {
+    name?: string;
+    property?: string;
+    content?: string;
+  }[]
 }
