@@ -65,6 +65,10 @@ export const routeMeta: RouteMeta = {
       margin: 0 auto;
       padding: 0 4rem;
 
+      @media screen and (max-width: 500px) {
+        padding: 0 2.4rem;
+      }
+
       & > article > ul {
         margin-top: 1.5rem;
         list-style-type: none;

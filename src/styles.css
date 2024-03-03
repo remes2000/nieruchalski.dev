@@ -24,18 +24,16 @@ body {
   color: var(--font-color);
 }
 
-.analog-markdown {
-  figure {
-    margin: 0;
-    text-align: center;
-    width: 100%;
-  }
+.analog-markdown figure {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
 
-  img {
-    max-width: 100%;
-  }
+.analog-markdown img {
+  max-width: 100%;
+}
 
-  a {
-    color: var(--font-color);
-  }
+.analog-markdown a {
+  color: var(--font-color);
 }

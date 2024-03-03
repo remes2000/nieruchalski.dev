@@ -5,6 +5,10 @@
   margin: 0 auto;
   padding: 0 4rem;
 
+  @media screen and (max-width: 500px) {
+    padding: 0 2.4rem;
+  }
+
   .author {
     margin: 1.5rem 0;
     font-size: 1.2rem;
