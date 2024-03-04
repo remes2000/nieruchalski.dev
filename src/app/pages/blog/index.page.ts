@@ -59,42 +59,7 @@ export const routeMeta: RouteMeta = {
       </article>
     </div>
   `,
-  styles: [`
-    .wrapper {
-      max-width: 90rem;
-      margin: 0 auto;
-      padding: 0 4rem;
-
-      @media screen and (max-width: 500px) {
-        padding: 0 2.4rem;
-      }
-
-      & > article > ul {
-        margin-top: 1.5rem;
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      & > header {
-        margin: 5rem 0;
-        font-size: 1.8rem;
-        p {
-          font-size: 1.2rem;
-        }
-        .funny-head {
-          white-space: nowrap;
-          line-height: 2;
-        }
-
-        @media screen and (max-width: 400px) {
-          text-align: center;
-        }        
-      }
-    }
-  `]
+  styleUrls: ['./index.page.scss'],
 })
 export default class BlogIndexPage {
   posts = injectContentFiles<BlogPost>();
