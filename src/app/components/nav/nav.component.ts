@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ModeSwitchComponent } from './_feature/mode-switch/mode-switch.component';
-import { WEBSITE_DOMAIN } from '../../const';
 import { environment } from '../../../environments/environment';
 
 @Component({
