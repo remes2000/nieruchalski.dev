@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ModeSwitchComponent } from './_feature/mode-switch/mode-switch.component';
-import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-nav',
@@ -11,5 +10,5 @@ import { environment } from '../../../environments/environment';
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
-  websiteDomain = environment.websiteDomain;
+  websiteDomain = import.meta.env.VITE_WEBSITE_DOMAIN;
 }

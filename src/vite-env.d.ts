@@ -35,3 +35,14 @@
 //   const cmp = any;
 //   export default cmp;
 // }
+
+interface ImportMetaEnv {
+  readonly VITE_WEBSITE_DOMAIN: string;
+  readonly VITE_WEBSITE_URL: string;
+  readonly VITE_MATOMO_SITE_ID: string;
+  readonly VITE_MATOMO_SITE_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}

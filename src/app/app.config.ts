@@ -5,7 +5,6 @@ import { provideFileRouter } from '@analogjs/router';
 import { provideContent, withMarkdownRenderer } from '@analogjs/content';
 import 'prismjs/components/prism-sql';
 import { MatomoConsentMode, provideMatomo, withRouter } from 'ngx-matomo-client';
-import { environment } from './../environments/environment';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,8 +14,8 @@ export const appConfig: ApplicationConfig = {
     provideContent(withMarkdownRenderer()),
     provideMatomo(
       {
-        siteId: environment.matomoSiteId,
-        trackerUrl: environment.matomoSiteUrl,
+        siteId: +import.meta.env.VITE_MATOMO_SITE_ID,
+        trackerUrl: import.meta.env.VITE_MATOMO_SITE_URL,
         requireConsent: MatomoConsentMode.COOKIE,
       },
       withRouter(),

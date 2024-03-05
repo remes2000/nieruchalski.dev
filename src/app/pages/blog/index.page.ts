@@ -5,7 +5,6 @@ import { injectContentFiles } from '@analogjs/content';
 import { BlogPostFeatureComponent } from '../../components/blog-post-feature/blog-post-feature.component';
 import { RouteMeta } from '@analogjs/router';
 import { BlogPost } from 'src/app/models/post';
-import { environment } from '../../../environments/environment';
 
 export const routeMeta: RouteMeta = {
   title: 'Michał Nieruchalski',
@@ -24,11 +23,11 @@ export const routeMeta: RouteMeta = {
     },
     {
       property: 'og:image',
-      content: `${environment.websiteUrl}/main-featured-image.jpg`,
+      content: `${import.meta.env.VITE_WEBSITE_URL}/main-featured-image.jpg`,
     },
     {
       property: 'og:url',
-      content: environment.websiteUrl,
+      content: import.meta.env.VITE_WEBSITE_URL,
     },
     {
       property: 'og:type',
