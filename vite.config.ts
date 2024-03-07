@@ -1,7 +1,6 @@
 /// <reference types="vitest" />
 
 import { defineConfig } from 'vite';
-import { PrerenderRoute } from 'nitropack';
 import analog, { PrerenderContentFile } from '@analogjs/platform';
 
 // https://vitejs.dev/config/
@@ -27,6 +26,9 @@ export default defineConfig(({ mode }) => ({
           },
         },
       ],
+      sitemap: {
+        host: 'https://nieruchalski.dev'
+      },
     },
   })],
   test: {
