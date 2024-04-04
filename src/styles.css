@@ -37,3 +37,7 @@ body {
 .analog-markdown a {
   color: var(--font-color);
 }
+
+.analog-markdown iframe {
+  border: none;
+}

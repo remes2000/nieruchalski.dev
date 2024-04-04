@@ -61,5 +61,8 @@ export const routeMeta: RouteMeta = {
   styleUrls: ['./index.page.scss'],
 })
 export default class BlogIndexPage {
-  posts = injectContentFiles<BlogPost>();
+  posts = injectContentFiles<BlogPost>()
+    .toSorted(({ attributes: { date: aDate } }, { attributes: { date: bDate } }) => {
+      return new Date(bDate).getTime() - new Date(aDate).getTime();
+    });
 } 
