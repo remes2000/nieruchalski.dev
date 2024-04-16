@@ -3,20 +3,19 @@ title: "donut.wasm - running C code in your browser"
 slug: donut-wasm
 subtitle: Running C code in your browser
 thumbnail: /post-assets/donut-wasm/thumbnail.jpg
-date: 2024-03-29 22:45:00.000Z
+date: 2024-04-16 22:45:00.000Z
 author: Michał Nieruchalski
-# todo: update meta
 meta:
   - name: description
-    content: "A short story about parsing and analyzing Facebook Messenger Chats"
+    content: "Interactive spinning ASCII donut"
   - property: og:title
-    content: "Deciphering Facebook: Analyzing Messenger Chats"
+    content: "donut.wasm - running C code in your browser"
   - property: og:description
-    content: "A short story about parsing and analyzing Facebook Messenger Chats"
+    content: "Interactive spinning ASCII donut"
   - property: og:image
-    content: https://nieruchalski.dev/post-assets/deciphering-facebook/header.jpg
+    content: https://nieruchalski.dev/post-assets/donut-wasm/header.jpg
   - property: og:url
-    content: https://nieruchalski.dev/deciphering-facebook
+    content: https://nieruchalski.dev/blog/donut-wasm
 ---
 
 <figure>
