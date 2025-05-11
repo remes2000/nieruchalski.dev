@@ -1,4 +1,5 @@
 pre[class*="language-"],
+pre:has(code[class*="language-"]),
 code[class*="language-"] {
 	color: #d4d4d4;
 	font-size: 13px;
@@ -34,7 +35,8 @@ code[class*="language-"] *::selection {
 	}
 }
 
-pre[class*="language-"] {
+pre[class*="language-"],
+pre:has(code[class*="language-"]) {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;

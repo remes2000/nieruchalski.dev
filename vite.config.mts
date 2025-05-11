@@ -30,6 +30,11 @@ export default defineConfig(({ mode }) => ({
         host: 'https://nieruchalski.dev'
       },
     },
+    content: {
+      prismOptions: {
+        additionalLangs: ['sql', 'c'],
+      }
+    }
   })],
   test: {
     globals: true,
