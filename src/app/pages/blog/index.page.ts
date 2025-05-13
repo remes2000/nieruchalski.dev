@@ -37,10 +37,9 @@ export const routeMeta: RouteMeta = {
 };
 
 @Component({
-  selector: 'app-blog-index-page',
-  standalone: true,
-  imports: [RouterLink, AsyncPipe, BlogPostFeatureComponent],
-  template: `
+    selector: 'app-blog-index-page',
+    imports: [RouterLink, AsyncPipe, BlogPostFeatureComponent],
+    template: `
     <div class="wrapper">
       <header>
         <h1>Hello <span class="funny-head">ヽ(•‿•)ノ</span></h1>
@@ -58,7 +57,7 @@ export const routeMeta: RouteMeta = {
       </article>
     </div>
   `,
-  styleUrls: ['./index.page.scss'],
+    styleUrls: ['./index.page.scss']
 })
 export default class BlogIndexPage {
   posts = injectContentFiles<BlogPost>()

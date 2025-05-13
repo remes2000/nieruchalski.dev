@@ -4,10 +4,9 @@ import { ThemeModeService } from './services/theme-mode.service';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  template: `<router-outlet></router-outlet>`,
+    selector: 'app-root',
+    imports: [RouterOutlet],
+    template: `<router-outlet></router-outlet>`
 })
 export class AppComponent implements OnInit {
   private readonly themeModeService = inject(ThemeModeService);

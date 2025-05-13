@@ -17,10 +17,9 @@ export const routeMeta: RouteMeta = {
 };
 
 @Component({
-  selector: 'app-blog-post-page',
-  standalone: true,
-  imports: [AsyncPipe, BlogPostComponent],
-  template: `
+    selector: 'app-blog-post-page',
+    imports: [AsyncPipe, BlogPostComponent],
+    template: `
     @if (post$ | async; as post) {
       <app-blog-post [post]="post" />
     }
