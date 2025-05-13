@@ -3,10 +3,9 @@ import { RouterLink } from '@angular/router';
 import { SocialMediaComponent } from './social-media/social-media.component';
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [RouterLink, SocialMediaComponent],
-  template: `
+    selector: 'app-footer',
+    imports: [RouterLink, SocialMediaComponent],
+    template: `
     <footer>
       <div>
         <a [routerLink]="['/']">Michał Nieruchalski {{ year }}</a>
@@ -14,7 +13,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
       <app-social-media />
     </footer>
   `,
-  styleUrl: './footer.component.scss',
+    styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
   year = (new Date()).getFullYear();
