@@ -41,3 +41,20 @@ body {
 .analog-markdown iframe {
   border: none;
 }
+
+.analog-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.analog-markdown table th,
+.analog-markdown table td {
+  padding: 1.2rem 1.6rem;
+  text-align: left;
+  border: 1px solid var(--accent-color);
+}
+
+.analog-markdown table th {
+  font-weight: 500;
+}
