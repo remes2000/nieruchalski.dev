@@ -1,25 +1,23 @@
 ---
-title: "Angular widget"
+title: "Building widgets with Angular"
 slug: angular-widget
-subtitle: How do you find out if your friends like you?
+subtitle: A bundle size investigation
 thumbnail: /post-assets/angular-widget/thumbnail.jpg
-date: 2025-11-24 20:00:00.000Z
+date: 2025-11-27 20:00:00.000Z
 author: Michał Nieruchalski
 meta:
   - name: description
-    content: "A short story about parsing and analyzing Facebook Messenger Chats"
+    content: "Building widgets with Angular - bundle size comparison"
   - property: og:title
-    content: "Deciphering Facebook: Analyzing Messenger Chats"
+    content: "Building widgets with Angular"
   - property: og:description
-    content: "A short story about parsing and analyzing Facebook Messenger Chats"
+    content: "Building widgets with Angular - bundle size comparison"
   - property: og:image
-    content: https://nieruchalski.dev/post-assets/deciphering-facebook/header.jpg
+    content: https://nieruchalski.dev/post-assets/angular-widget/header.jpg
   - property: og:url
-    content: https://nieruchalski.dev/blog/deciphering-facebook
+    content: https://nieruchalski.dev/blog/angular-widget
 ---
 
-<!-- TODO: Figure our better title and description -->
-<!-- TODO: compress the image -->
 <figure>
   <img
     src="/post-assets/angular-widget/header.jpg"
@@ -42,16 +40,15 @@ In it, he demonstrated how to configure Angular to create standalone widgets rat
 It all sounded like a cool idea, but I had one question: <u>What would be the bundle size of this Angular widget?</u>
 In this article, I'll build a simple widget in Angular and inspect its size. Then I'll compare it with the same widget implemented in React and Preact.
 
-<!-- TODO: fix the routing problem -->
-> *tl;dr*
+tl;dr Angular 105 kB, React 195 kB, Preact 14 kB
 
 Let's imagine you're a maintainer of "CodeCorner", a 2006 website created for developers. Your task is to display a pie chart in the right sidebar showing the distribution of where currently active users are from. Since it's going to be a complex widget with advanced UI, you've decided to build it with a framework rather than vanilla JavaScript.
 
 <figure>
   <img
-    src="/post-assets/angular-widget/codecorner.png"
-    alt="Facebook Messenger Logo"
-    title="Facebook Messenger Logo"
+    src="/post-assets/angular-widget/codecorner.jpg"
+    alt="CodeCorner"
+    title="CodeCorner"
   />
   <figcaption>CodeCorner - <a href="https://codecorner.nieruchalski.dev" target="_blank">demo</a></figcaption>
 </figure>
